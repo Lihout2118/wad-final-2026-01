@@ -1,3 +1,132 @@
 /* /src/index.css */
 
 @import "tailwindcss";
+
+.auth-page {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px #00000010;
+}
+
+.auth-card h1 {
+  margin-bottom: 0;
+}
+
+.auth-card input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-card button,
+.navbar button {
+  padding: 11px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-card button:disabled {
+  opacity: 0.6;
+}
+
+.error-message {
+  padding: 10px;
+  color: #b91c1c;
+  background: #fee2e2;
+  border-radius: 6px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.navbar button {
+  margin-left: auto;
+}
+
+.page-container {
+  padding: 24px;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-form button,
+.course-card button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.course-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+}
+
+.course-card h2 {
+  margin-top: 0;
+}
+
+.course-card button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.success-message {
+  padding: 10px;
+  color: #166534;
+  background: #dcfce7;
+  border-radius: 6px;
+}
+
